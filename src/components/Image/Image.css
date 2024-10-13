@@ -1,0 +1,54 @@
+/* Flex container for image cards */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Individual card for each image */
+.image-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    margin: 20px;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the user image */
+.user-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Styling for social media handle */
+.image-card h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.image-card p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* Add background color and general font styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Helvetica', sans-serif;
+}
